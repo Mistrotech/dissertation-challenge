@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--All hrefs at top-->
+<link href="styles.css" rel="stylesheet">
+<script src="newBtn.js" id="addBtn"></script>
+
+<!--Homepage for Dissertation PWA-->
+<!--Each button will represent the bubbles-->
+<button onclick="popupVisible('popup-overlay')" type="button" class="add-btn-topopup" id="add">+</button><br>
+
+
+<div class="popup-overlay" id="popupOverlay">
+    <div class="add-btn-popup" id="popup">
+        <span class="close" id="closePopup">&times;</span>
+        <div class="popup-content">
+            <input type="text" id="name" class="name-txt" onclick="txtEnter()"></input>
+            <p class="popup-txt">Add new bubble</p>
+            <p>Color:</p>
+            <button onclick="newBtnAdd()" type="button" class="add-btn" id="add">+</button><br>
+        </div>
+    </div>
+
+</div>
