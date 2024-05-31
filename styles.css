@@ -1,8 +1,13 @@
+body{
+   background:url("bkgrnd.jpg");
+}
+
 .add-btn {
   /*need to fix positioning of button later, center "+" icon somehow*/
-    font-family:'Segoe UI';
+    font-family:'Ubuntu';
     height: 50px;
     width: 50px;
+    padding-left:10px;
     line-height: 50px;
     font-size: 2em;
     border-radius: 50%;
@@ -16,7 +21,7 @@
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
   }
   .add-btn-topopup {
-      font-family:'Segoe UI';
+      font-family:'Ubuntu';
       height: 50px;
       width: 50px;
       position:relative;
@@ -33,25 +38,29 @@
       box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
     }
   .bubble{
-    font-family:'Segoe UI';
-    height: 50px;
-    width: 50px;
+    font-family:'Ubuntu';
+    height: 100px;
+    width: 100px;
     line-height: 50px;
-    font-size: 2em;
+    font-size: 15px;
     border-radius: 50%;
     background-color: white;
     color: black;
     text-align: center;
     border: none;
-    padding-right: 10px;
     cursor: pointer;
     bottom: 10%;
     right: 4%;
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .name-txt{
     box-shadow: 3px 3px 4px  rgba(0,0,0,.5);
     
+  }
+  .close {
+     color=white;
   }
   .popup-overlay {
     top: 0;
@@ -65,5 +74,6 @@
     visibility:hidden;
   }
   .popup-txt {
-    font-family: Segoe UI;
+    font-family: 'Ubuntu';
+    color:white;
   }
