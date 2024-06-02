@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(93, 123, 228);
+  margin: 0;
+}
+
+
+<!--Center the box
+
+
+
+.login-box {
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #5775ea;
+  text-align: center;
+}
+
+.login-input {
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+
+
+<!--Interact with the Login box
+
+
+.login-button {
+  background-color: #34497a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<div class="login-box">
+  <h1>Login</h1>
+  <form onsubmit="return validateForm()" action="home.html" method="post">
+    <label for="username">Username:</label>
+    <input type="text" class="login-input" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="text" class="login-input" id="password" name="password" required>
+    <br>
+    <button type="submit" class="login-button">Login</button>
+  </form>
+  <div id="error-message"></div>
+</div>
+</body>
+</html>
+<script>
+function validateForm() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  if (username !== "John Doe" || password !== "password") {
+    document.getElementById("error-message").innerHTML = "Incorrect username or password";
+    return false;
+  }
+  return true;
+}
+</script>
+</body>
+</html>
